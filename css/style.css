@@ -68,10 +68,11 @@ header span:last-child{
 
 nav li{
   display: inline-block;
-  margin: 0em 0.1em;
+  margin: 0em ;
   margin-top: -0.5rem;
-  border-left: solid 1px black;
-  border-right: solid 1px black;
+ font-size: 1em;
+ letter-spacing: 1px;
+ text-transform: uppercase;
 }
 
 header span:last-child:hover,
@@ -83,15 +84,18 @@ nav li:hover{
 header nav ul{
   margin-bottom: 0px;
   padding: 0px;
+
+  
 }
 
 nav.col{
-  flex:3;
+  flex:2;
   
 }
 
 ul.flex-grid{
   display: center;
+  justify-content: right;
 }
 
 
@@ -338,6 +342,11 @@ main.clear a.btn-white{
 
 }
 
+.wrapper{
+  background-color: lightgray;
+  height: fit-content;
+}
+
 .mom section,
 .mom img{
   display: inline-block;
@@ -352,7 +361,10 @@ main.clear a.btn-white{
   padding-bottom: 45px;
 }
 .mom img{
+  vertical-align: middle;
   width: 50%;
+  padding-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .mom h2{
@@ -483,6 +495,7 @@ img.lb-short{
 
 .lookbook h2{
   display: block;
+  font-size: 2rem;
 }
 
 @media (max-width: 480px){

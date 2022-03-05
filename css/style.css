@@ -251,6 +251,10 @@ main.clear a.btn-white{
     width: 100%;
   }
 
+  main.clear section a.btn{
+    padding: 1em 1em;
+  }
+
 
 }
 /******************************************
@@ -308,10 +312,10 @@ main.clear a.btn-white{
 
 @media (max-width: 480px) { 
 
-
+/* 
   .highlights i{
     display: none;
-  }
+  } */
 
   .highlights{
     padding-top: 50px;
@@ -324,6 +328,7 @@ main.clear a.btn-white{
   section.highlights.flex-grid{
     margin-left: 0px;
     margin-right: 0px;
+
   }
 
 
@@ -438,11 +443,14 @@ section.mom.flex-grid img{
 
   section.clear.stylists.flex-grid{
     display: flex;
+   
   }
 
   .stylists section.col1-3 section{
     width: 99.5%;
   }
+
+
 
 } 
 

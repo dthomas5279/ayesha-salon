@@ -88,8 +88,12 @@ header nav ul{
   
 }
 
+nav li:last-child{
+  flex: 2;
+}
+
 nav.col{
-  flex:2;
+  flex:4;
   
 }
 

@@ -305,7 +305,8 @@ main.clear a.btn-white{
 }
 
 .highlights i{
-  margin: 1rem 0;
+  margin: 0.5em 0;
+  padding-top: 2em;
 }
 
 

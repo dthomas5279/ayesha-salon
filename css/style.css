@@ -1,0 +1,496 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body{
+  font-family: 'Cinzel', serif;
+  
+}
+
+img{
+  width: 100%;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6{
+  font-family:'Mulish', sans-serif;
+}
+
+/******************************************
+/* Header
+/*******************************************/
+
+header{
+  text-align: center;
+  padding:1em 0em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+header span:first-child{
+
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 35px;
+  color: rgb(134, 118, 22);
+  margin-top: -5px;
+  
+}
+
+header .flex-grid{
+  align-content: center;
+}
+
+
+header span:last-child{
+  padding-top: 0.6em;
+}
+
+
+
+nav li{
+  display: inline-block;
+  margin: 0em 0.1em;
+  margin-top: -0.5rem;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
+
+header span:last-child:hover,
+nav li:hover{
+  font-weight: 700;
+}
+
+
+header nav ul{
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+nav.col{
+  flex:3;
+  
+}
+
+ul.flex-grid{
+  display: center;
+}
+
+
+
+@media (max-width: 481px) { 
+  nav{
+    display: none;
+    float: none;
+  }
+
+}
+
+
+/******************************************
+/* Buttons
+/*******************************************/
+.btn-white,
+.btn{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 1em 1em;
+}
+
+.btn-white{
+  color: black;
+  background-color: white;
+}
+
+
+
+/******************************************
+/* Main
+/*******************************************/
+main{
+  height: 500px;
+  background-image: url("https://i.imgur.com/IPb4xXz.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+
+  
+  
+}
+
+.visit{
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+  width: 250px;
+  height: 200px;
+  margin: 0em 1em;
+  padding: 0.5em;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  text-align: center;
+  letter-spacing: 3px;
+
+}
+
+.visit h4{
+  font-size: 1em;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  letter-spacing: 3px;
+  font-weight: 200px;
+
+}
+
+
+
+
+
+main.clear section:first-child{
+  margin: 0 10%;
+  
+}
+
+main.clear section h1 {
+font-size: 4em;
+width: 9em;
+font-weight: 300;
+letter-spacing: 8px;
+line-height: 1.2em;
+padding-top: 45px;
+margin-bottom: 0.25em;
+margin-top: 0px;
+text-shadow: 1px 1px black;
+
+}
+
+main.clear section:first-child p{
+  text-shadow: 1px 1px black;
+  font-size: 20px;
+}
+
+main.clear p{
+  margin-top: 0em;
+  padding-bottom: 1.5em;
+  font-size: 1em;
+  
+}
+
+
+main.clear a.btn-white{
+  padding-top: 10px;
+
+}
+
+
+
+
+@media (max-width: 480px) { 
+  main{
+    margin: 0px;
+    position: static;
+  }
+
+  main.clear section,
+  main.clear section *,
+  section.clear.stylists.flex-grid,
+  section.lookbook{
+    margin-left: 0px;
+    padding-left: 0px;
+
+  }
+
+  main.clear section h1{
+    font-size: 2em;
+  }
+
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .col1-3,
+  .stylists.flex-grid{
+    display: block ; 
+    width: 100% ;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
+
+  main section.visit{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+
+}
+/******************************************
+/* Flexbox
+/*******************************************/
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.col {
+  flex: 1;
+}
+
+.col1-3{
+  max-width: 29%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  /*margin: 2rem 2%;
+  float: left;*/
+}
+
+.col1-2{
+  max-width: 49%;
+  flex: 1;
+
+}
+
+.col1-3 img{
+  width: 50%;
+}
+
+.center{
+  justify-content: flex-end;
+}
+
+/******************************************
+/* Highlights Section
+/*******************************************/
+.stylists,
+.highlights{
+  margin: 3rem 15%;
+  text-align: center;
+}
+
+.highlights i{
+  margin: 1rem 0;
+}
+
+
+
+@media (max-width: 480px) { 
+
+
+  .highlights i{
+    display: none;
+  }
+
+  .highlights{
+    padding-top: 50px;
+  }
+
+  .highlights p{
+    font-size: 0.75em;
+  }
+
+  section.highlights.flex-grid{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+
+}
+
+
+
+/******************************************
+/* Momentum Section
+/*******************************************/
+.mom{
+  margin: 10rem 15%;
+  font-size: 1.3em;
+  text-align: left;
+  
+
+}
+
+.mom section,
+.mom img{
+  display: inline-block;
+
+}
+.mom section{
+  width: 50%;
+
+}
+
+.mom p{
+  padding-bottom: 45px;
+}
+.mom img{
+  width: 50%;
+}
+
+.mom h2{
+  font-size: 2.2em;
+  padding-top: 35px;
+}
+
+@media (min-width: 481px) and (max-width: 850px) { 
+
+section.clear.flex-grid.col1-2,
+section.mom.flex-grid{
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.mom.flex-grid img{
+  width: 100%;
+  height: auto;
+  padding-top: 3em;
+}
+}
+
+@media (max-width: 480px){
+  section.mom.flex-grid{
+    display: none;
+  }
+
+  section.visit a.btn-white{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+} 
+
+/******************************************
+/* Stylists
+/*******************************************/
+.stylists > section >section{
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+  width: 75%;
+  margin-top: -22px;
+}
+
+.stylists img{
+  width: 100%;
+  height: 415px;
+  aspect-ratio: 1980/2436;
+}
+
+@media (max-width: 480px){
+
+  .stylists section.col1-3{
+    margin-left: 0px;
+    margin-right: 0px;
+    height: auto;
+    width: 100%;
+  }
+
+  .stylists section.col1-3 img{
+    height: 170px;
+  }
+
+  section.clear.stylists.flex-grid{
+    display: flex;
+  }
+
+  .stylists section.col1-3 section{
+    width: 99.5%;
+  }
+
+} 
+
+/******************************************
+/* Offer
+/*******************************************/
+.offer{
+  margin: 3rem 15%;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px black;
+  
+}
+
+.offer .btn{
+  width: 25%;
+}
+
+.offer h4{
+  margin-bottom: 0px;
+}
+
+@media (max-width: 480px){
+  .offer .btn{
+    width: 100%;
+  }
+}
+/******************************************
+/* Lookbook
+/*******************************************/
+
+img.lb-long{
+  height: 60%;
+  width: 100%;
+  margin: 1em;
+}
+
+img.lb-short{
+  height: 30%;
+  width: 100%;
+  margin: 1em;
+}
+
+.lookbook{
+  margin: 3rem 15%;
+}
+
+.lookbook h2{
+  display: block;
+}
+
+@media (max-width: 480px){
+  .lookbook{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/******************************************
+/* Responsiveness
+/*******************************************/
